@@ -1,0 +1,50 @@
+@font-face {
+        font-family: "Inter";
+        src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap")
+          format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "Inter";
+        src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap")
+          format("truetype");
+        font-weight: lighter;
+        font-style: normal;
+      }
+      /* @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap"); */
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      .hero-image {
+        background-image: url("/assets/hero.jpg");
+        background-size:  cover;
+        background-position: center;
+      }
+      p.lead {
+        font-weight: lighter;
+      }
+      .hero-input {
+        width: 80vw;
+      }
+      [class*="col"] {
+        padding: 1rem;
+        /* border: 1px solid blue; */
+        display: flex;
+      }
+      .card {
+        border-radius: 0.7rem;
+        overflow: hidden;
+        /* border: 1px solid red; */
+        display: flex;
+        height: 100%;
+      }
+      .card-img{
+        height: 100%;
+        transition: transform 0.2s;
+      }
+      a:hover img {
+        transform: scale(1.1);
+        filter: brightness(50%);
+      }
